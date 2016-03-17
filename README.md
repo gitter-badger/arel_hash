@@ -1,29 +1,15 @@
 # ArelHash
 
-TODO: Write a gem description
+ArelHash is a library that offers some utilities for serializing/deserializing Arel expressions into/from hashes.
+At the heart of the where part of such an ArelHash expression, we have core expressions in the form of: 
 
-## Installation
-
-Add this line to your application's Gemfile:
-
-    gem 'arel_hash'
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install arel_hash
-
-## Usage
-
-TODO: Write usage instructions here
-
-## Contributing
-
-1. Fork it ( http://github.com/<my-github-username>/arel_hash/fork )
-2. Create your feature branch (`git checkout -b my-new-feature`)
-3. Commit your changes (`git commit -am 'Add some feature'`)
-4. Push to the branch (`git push origin my-new-feature`)
-5. Create new Pull Request
+ ``` { <predication>: { <left_operand> => <right_operand> } } ```
+  
+with ```operand``` being a 'column name' if it is a symbol, or a constant otherwise.
+ 
+These expressions can be combined using *OR* and/or *AND*:
+ 
+    { or: [ <subexpression>, <subexpression>, ... ] }
+    { and: [ <subexpression>, <subexpression>, ... ] }
+ 
+ 
