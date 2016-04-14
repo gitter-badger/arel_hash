@@ -14,4 +14,7 @@ These expressions can be combined using *OR* and/or *AND*:
     { or: [ <subexpression>, <subexpression>, ... ] }
     { and: [ <subexpression>, <subexpression>, ... ] }
  
+ ## Contributing
+ 
+ ```bundle exec appraisal rspec```
  
