@@ -2,5 +2,5 @@ language: ruby
 rvm:
   - 2.1.6
 gemfile:
-  - Gemfile
-  - Gemfile.rails
+  - gemfiles/rails.gemfile
+  - gemfiles/without_rails.gemfile
