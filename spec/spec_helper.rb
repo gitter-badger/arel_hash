@@ -90,4 +90,10 @@ RSpec.configure do |config|
   # as the one that triggered the failure.
   Kernel.srand config.seed
 =end
+  begin
+    gem('rails')
+  rescue Gem::LoadError
+    #config.exclude_pattern=  '**/dummy/spec/models/post_spec.rb'
+    config.filter_run_excluding type: :model
+  end
 end
