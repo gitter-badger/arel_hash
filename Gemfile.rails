@@ -1,0 +1,6 @@
+source 'https://rubygems.org'
+
+gem 'rails'
+
+# Specify your gem's dependencies in arel_hash.gemspec
+gemspec
