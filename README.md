@@ -1,5 +1,7 @@
 # ArelHash
 
+[![Join the chat at https://gitter.im/UP-nxt/arel_hash](https://badges.gitter.im/UP-nxt/arel_hash.svg)](https://gitter.im/UP-nxt/arel_hash?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 [![Build Status](http://img.shields.io/travis/UP-nxt/arel_hash.svg)](https://travis-ci.org/UP-nxt/arel_hash)
 
 ArelHash is a library that offers some utilities for serializing/deserializing Arel expressions into/from hashes.
